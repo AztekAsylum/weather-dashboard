@@ -1,0 +1,30 @@
+/*BODY*/
+h2 {
+  font-size: 0.5 rem;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+/* body {
+  #fff
+} */
+
+h1{
+  margin-right: 100px;
+}
+/*ID */
+#rightCol {
+  width: 700px;
+  height: 200px;
+  border: 1px solid black;
+  box-sizing: border-box;
+  
+}
+#leftCol {
+  /* background-color: aqua;
+} */
+  /* CLASS */
+  /* .current-Weather {
+  color: #fff,
+  background: #5372F0 */
+}
