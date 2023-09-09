@@ -10,4 +10,4 @@ In this ticket. I worked on creating a weather outlook for city of the users cho
 
 ## Deployed Link
 
-[Click here to go to deployed app](www.google.com)
+[Click here to go to deployed app](https://aztekasylum.github.io/weather-dashboard/)
