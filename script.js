@@ -47,8 +47,80 @@ function getWeather(lat, lon) {
         ".png";
 
       // DAY 2
+      var day2Temp = document.getElementById("day2Temp");
+      day2Temp.textContent = selectedData[1].main.temp;
 
-      
+      var day2Wind = document.getElementById("day2Wind");
+      day2Wind.textContent = selectedData[1].wind.speed;
+
+      var day2Humidity = document.getElementById("day2Humidity");
+      day2Humidity.textContent = selectedData[1].main.humidity;
+
+      var day2Date = document.getElementById("day2Date");
+      day2Date.textContent = selectedData[1].dt_txt.split(" ")[0];
+
+      var day2Icon = document.getElementById("day2Icon");
+      day2Icon.src =
+        "https://openweathermap.org/img/wn/" +
+        selectedData[1].weather[0].icon +
+        ".png";
+
+      //Day 3
+      var day3Temp = document.getElementById("day3Temp");
+      day3Temp.textContent = selectedData[2].main.temp;
+
+      var day3Wind = document.getElementById("day3Wind");
+      day3Wind.textContent = selectedData[2].wind.speed;
+
+      var day3Humidity = document.getElementById("day3Humidity");
+      day3Humidity.textContent = selectedData[2].main.humidity;
+
+      var day3Date = document.getElementById("day3Date");
+      day3Date.textContent = selectedData[2].dt_txt.split(" ")[0];
+
+      var day3Icon = document.getElementById("day3Icon");
+      day3Icon.src =
+        "https://openweathermap.org/img/wn/" +
+        selectedData[2].weather[0].icon +
+        ".png";
+
+      //Day 4
+      var day4Temp = document.getElementById("day4Temp");
+      day4Temp.textContent = selectedData[3].main.temp;
+
+      var day4Wind = document.getElementById("day4Wind");
+      day4Wind.textContent = selectedData[3].wind.speed;
+
+      var day4Humidity = document.getElementById("day4Humidity");
+      day4Humidity.textContent = selectedData[3].main.humidity;
+
+      var day4Date = document.getElementById("day4Date");
+      day4Date.textContent = selectedData[3].dt_txt.split(" ")[0];
+
+      var day4Icon = document.getElementById("day4Icon");
+      day4Icon.src =
+        "https://openweathermap.org/img/wn/" +
+        selectedData[3].weather[0].icon +
+        ".png";
+
+      //Day 5
+      var day5Temp = document.getElementById("day5Temp");
+      day5Temp.textContent = selectedData[4].main.temp;
+
+      var day5Wind = document.getElementById("day5Wind");
+      day5Wind.textContent = selectedData[4].wind.speed;
+
+      var day5Humidity = document.getElementById("day5Humidity");
+      day5Humidity.textContent = selectedData[4].main.humidity;
+
+      var day5Date = document.getElementById("day5Date");
+      day5Date.textContent = selectedData[4].dt_txt.split(" ")[0];
+
+      var day5Icon = document.getElementById("day4Icon");
+      day5Icon.src =
+        "https://openweathermap.org/img/wn/" +
+        selectedData[3].weather[0].icon +
+        ".png";
 
       console.log(selectedData);
     });
@@ -103,6 +175,8 @@ function getDaily(lat, lon) {
         "https://openweathermap.org/img/wn/" + data.weather[0].icon + ".png";
     });
 }
+
+// Storing data in local storage
 
 // getCoord(searchCity);
 
