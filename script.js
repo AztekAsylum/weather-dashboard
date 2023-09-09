@@ -116,10 +116,10 @@ function getWeather(lat, lon) {
       var day5Date = document.getElementById("day5Date");
       day5Date.textContent = selectedData[4].dt_txt.split(" ")[0];
 
-      var day5Icon = document.getElementById("day4Icon");
+      var day5Icon = document.getElementById("day5Icon");
       day5Icon.src =
         "https://openweathermap.org/img/wn/" +
-        selectedData[3].weather[0].icon +
+        selectedData[4].weather[0].icon +
         ".png";
 
       console.log(selectedData);
