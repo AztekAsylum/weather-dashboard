@@ -5,11 +5,14 @@ h2 {
   margin-bottom: 5px;
 }
 
+h4 {
+  font-weight: 700;
+}
 /* body {
   #fff
 } */
 
-h1{
+h1 {
   margin-right: 100px;
 }
 /*ID */
@@ -18,13 +21,23 @@ h1{
   height: 200px;
   border: 1px solid black;
   box-sizing: border-box;
-  
 }
-#leftCol {
-  /* background-color: aqua;
+/* #leftCol { */
+/* background-color: aqua;
 } */
-  /* CLASS */
-  /* .current-Weather {
+/* CLASS */
+/* .current-Weather {
   color: #fff,
   background: #5372F0 */
+/* } */
+
+#currentHeader {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#forecastContainer {
+  display: flex;
+  flex-direction: row;
 }

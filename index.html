@@ -40,16 +40,66 @@
                     </div>
             </div>
             <div id = "rightCol" class = "col-8">
-                <p>current weather</p>
-                    <div>
-                      <h3 class="fw-bold">_______ ( ______ )</h3>
-                      <h6 class="my-3 mt-3">Temperature: __°C</h6>
-                      <h6 class="my-3">Wind: __ M/S</h6>
-                      <h6 class="my-3">Humidity: __%</h6>
-                    </div>
+              <p>current weather</p>
+              <div>
+                <div id="currentHeader">
+                  <h3 class="fw-bold"> 
+                    <span id = "currentCity">_____</span>( 
+                    <span id ="currentDate">______</span> )
+                  </h3>
+                  <img id="currentIcon"/>
+                </div>
+                
+
+                <h6 class="my-3 mt-3">Temperature: <span id="current-temp">__</span>°F</h6>
+                <h6 class="my-3">Wind: <span id = "currentWind">
+                __
+                </span>MPH</h6>
+                <h6 class="my-3">Humidity: <span id ="currentHumidity">__</span> %</h6>
+              </div>
+              <h4 class="my-4 pe-5">5-day Forecast:</h4>  
+
+              <div id="forecastContainer">
+                <!--  DAY 1 -->
+                <div>
+                  <div id="currentHeader">
+                    <h3 class="fw-bold"> 
+                      <span id ="day1Date">______</span>
+                    </h3>
+                    <img id="day1Icon"/>
+                  </div>
+                  
+                  <h6 class="my-3 mt-3">Temperature: <span id="day1Temp">__</span>°F</h6>
+                  <h6 class="my-3">Wind: <span id = "day1Wind">
+                  __
+                  </span>MPH</h6>
+                  <h6 class="my-3">Humidity: <span id ="day1Humidity">__</span> %</h6>
+                </div>
+                <!-- END DAY 1 -->
+
+                <!--  DAY 2 -->
+                <div>
+                  <div id="currentHeader">
+                    <h3 class="fw-bold"> 
+                      <span id ="day1Date">______</span>
+                    </h3>
+                    <img id="day1Icon"/>
+                  </div>
+                  
+                  <h6 class="my-3 mt-3">Temperature: <span id="day1Temp">__</span>°F</h6>
+                  <h6 class="my-3">Wind: <span id = "day1Wind">
+                  __
+                  </span>MPH</h6>
+                  <h6 class="my-3">Humidity: <span id ="day1Humidity">__</span> %</h6>
+                </div>
+                <!-- END DAY 2 -->
+
+              </div>
             </div>
-        </div>
+            
     </div>
+    
+        </div>
     
       
 
@@ -61,6 +111,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
     <script src="./script.js"></script>
   </body>
 </html>
