@@ -9,7 +9,7 @@ var searchInput = $("#searchInput");
 //FUNCTIONS
 // Lat and Lon
 function getWeather(lat, lon) {
-  var forcastQueryURL = `http://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${apiKey}`;
+  var forcastQueryURL = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${apiKey}`;
   fetch(forcastQueryURL)
     .then(function (response) {
       return response.json();
@@ -129,7 +129,7 @@ function getWeather(lat, lon) {
 // getWeather();
 function getCoord(city) {
   var coordsQueryURL =
-    `http://api.openweathermap.org/geo/1.0/direct?q=${city}&appid=` + apiKey;
+    `https://api.openweathermap.org/geo/1.0/direct?q=${city}&appid=` + apiKey;
   fetch(coordsQueryURL)
     .then(function (response) {
       return response.json();
@@ -145,7 +145,7 @@ function getCoord(city) {
 
 // GET DAILY WEATHER
 function getDaily(lat, lon) {
-  var forcastQueryURL = `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=imperial&appid=${apiKey}`;
+  var forcastQueryURL = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=imperial&appid=${apiKey}`;
   fetch(forcastQueryURL)
     .then(function (response) {
       return response.json();
