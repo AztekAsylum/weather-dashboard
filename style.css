@@ -41,3 +41,12 @@ h1 {
   display: flex;
   flex-direction: row;
 }
+#cityContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+#cityContainer button {
+  margin: 5px;
+  border-radius: 5px;
+}
