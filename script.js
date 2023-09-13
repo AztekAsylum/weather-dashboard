@@ -9,7 +9,7 @@ var searchInput = $("#searchInput");
 //FUNCTIONS
 // Lat and Lon
 function getWeather(lat, lon) {
-  var forcastQueryURL = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${apiKey}`;
+  var forcastQueryURL = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&units=imperial&appid=${apiKey}`;
   fetch(forcastQueryURL)
     .then(function (response) {
       return response.json();

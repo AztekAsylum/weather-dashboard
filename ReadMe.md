@@ -6,7 +6,7 @@ In this ticket. I worked on creating a weather outlook for city of the users cho
 
 ## Screenshot
 
-![screenshot](./Screenshot%202023-09-08%20at%2010.06.15%20PM.png)
+![screenshot](./Screenshot%20updated.png)
 
 ## Deployed Link
 

@@ -44,6 +44,7 @@ h1 {
 #cityContainer {
   display: flex;
   flex-direction: column;
+  margin-top: 5px;
 }
 
 #cityContainer button {
