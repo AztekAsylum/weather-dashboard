@@ -1,5 +1,5 @@
 //VARIABLE DECLARTIONS
-
+var citiesArr = JSON.parse(localStorage.getItem("cities")) || [];
 var searchCity = "Denver";
 var apiKey = "845f0c1468ec5f7248843261bd4c20e1";
 var searchButton = $("#searchButton");
@@ -176,6 +176,18 @@ function getDaily(lat, lon) {
     });
 }
 
+function loadHistory() {
+  $("#cityContainer").html("");
+  for (let index = 0; index < citiesArr.length; index++) {
+    const cities = citiesArr[index];
+    var newBtn = $("<button>");
+    newBtn.text(cities);
+    newBtn.on("click", function (event) {
+      getCoord(event.target.textContent);
+    });
+    $("#cityContainer").append(newBtn);
+  }
+}
 // Storing data in local storage
 
 // getCoord(searchCity);
@@ -184,12 +196,12 @@ function getDaily(lat, lon) {
 searchButton.on("click", function (event) {
   var userInput = searchInput.val();
   getCoord(userInput);
-  localStorage.setItem("cities", userInput);
+  citiesArr.push(userInput);
+  localStorage.setItem("cities", JSON.stringify(citiesArr));
   // console.log(userInput);
+  loadHistory();
 });
 
+loadHistory();
 // Load Search History
-var cities = localStorage.getItem("cities");
-var newBtn = $("<button>");
-newBtn.text(cities);
-$("#cityContainer").append(newBtn);
+// var cities = localStorage.getItem("cities");
