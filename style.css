@@ -8,13 +8,11 @@ h2 {
 h4 {
   font-weight: 700;
 }
-/* body {
-  #fff
-} */
 
 h1 {
   margin-right: 100px;
 }
+
 /*ID */
 #rightCol {
   width: 700px;
@@ -22,14 +20,6 @@ h1 {
   border: 1px solid black;
   box-sizing: border-box;
 }
-/* #leftCol { */
-/* background-color: aqua;
-} */
-/* CLASS */
-/* .current-Weather {
-  color: #fff,
-  background: #5372F0 */
-/* } */
 
 #currentHeader {
   display: flex;
