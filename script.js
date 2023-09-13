@@ -184,5 +184,12 @@ function getDaily(lat, lon) {
 searchButton.on("click", function (event) {
   var userInput = searchInput.val();
   getCoord(userInput);
+  localStorage.setItem("cities", userInput);
   // console.log(userInput);
 });
+
+// Load Search History
+var cities = localStorage.getItem("cities");
+var newBtn = $("<button>");
+newBtn.text(cities);
+$("#cityContainer").append(newBtn);
